@@ -1,0 +1,450 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.80);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.4px solid #696765;
+  z-index: 1000;
+  /* Garante que o cabeçalho fique acima do conteúdo */
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img {
+  width: 150px;
+  margin: 0px;
+  height: auto;
+  margin-left:10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Mirage', sans-serif;
+  margin-right: 28px;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+main {
+  padding-top: 120px;
+  /* Espaçamento para compensar a altura do cabeçalho */
+}
+
+section {
+  padding: 20px;
+}
+
+
+.recurso {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.depoimento {
+  background-image: url(imagens/fundo/Imagem\ do\ WhatsApp\ de\ 2024-04-24\ à\(s\)\ 21.58.54_c8d6df91.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #fff;
+  border-top: 0.4px solid #696765;
+  text-align: center;
+  font-family: 'Mirage', sans-serif;
+  font-size: 28px;
+  border-bottom: 0.4px solid #696765;
+  padding-top: 23px;
+
+
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-right: 25px;
+    /* Ajusta o espaçamento horizontal entre as imagens */
+    margin-bottom: 35px;
+    /* Ajusta o espaçamento vertical entre as linhas */
+  }
+
+  li:last-child{
+    margin-right: 0;
+    /* Remove o espaçamento à direita da última imagem na linha */
+  }
+
+  img{
+    max-height: 90px;
+    /* Define a altura máxima das imagens */
+    min-width: 80%;
+    object-fit: cover;
+    vertical-align: bottom;
+    margin-bottom: 0;
+    /* Remove qualquer espaçamento extra entre as imagens */
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    li {
+      height: 10vh;
+    }
+  }
+
+  @media (max-height: 120px) {
+    li {
+      height: 80vh;
+    }
+  }
+
+  @media (max-aspect-ratio: 1/1) and (max-width: 120px) {
+    ul {
+      flex-direction: row;
+    }
+
+    li {
+      height: auto;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }
+
+}
+
+.depoimento blockquote {
+
+  border-left: 5px solid rgb(0, 0, 0);
+  padding-left: 10px;
+
+}
+
+.depoimentotitulo{
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border-radius: 18px;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  margin-top: -10px;
+}
+
+footer {
+  background-image: url(imagens/fundo/2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  color: #fff;
+  padding: 5px;
+  text-align: left;
+  font-family: 'Mirage', sans-serif;
+  font-size: 18px;
+
+}
+
+.direito {
+  text-align: center;
+}
+
+
+
+.botao_enviar {
+  background-color: #242424f8;
+  /* Vermelho */
+  color: white;
+  /* Branco */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.botao_enviar:hover {
+  background-color: #5a5a5a;
+  /* Vermelho mais escuro */
+}
+
+.video-container {
+
+  position: relative;
+  font-family: 'rossans', sans-serif;
+  text-align: center;
+  font-size: 48px;
+  width: 100%;
+  max-width: 800px;
+  /* Largura máxima do vídeo */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  padding-bottom: 670px;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  padding-top: 35px;
+  margin-top: 50px;
+}
+
+.conteudofooter {
+  width: 100%;
+  display: flex;
+}
+
+.contato {
+  margin-left: 20px;
+}
+
+.contatodiv {
+  flex: 1;
+  /* cada div ocupa a mesma quantidade de espaço */
+  padding: 5px;
+  /* preenchimento interno */
+  margin-top: -16px;
+  height: 0px;
+  margin-left: 8px;
+}
+
+.divredes {
+  float: right;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* Alinha os itens à direita */
+  justify-content: flex-start;
+  /* Alinha os itens ao topo */
+  margin-top: -176px;
+  /* Move os itens um pouco para cima */
+  margin-right: -5px;
+  /* Move os itens um pouco para a direita */
+
+
+}
+
+.divredes img{
+  width: 194px;
+  margin: 7px;
+  height: auto;
+  margin-right: 100px;
+  background-color: rgba(97, 97, 97, 0.521);
+  border-radius:50px;
+  /* Adiciona uma margem à direita para ajustar para a esquerda */
+}
+
+
+
+
+
+.video-box {
+  width: 100%;
+  background-image: url("imagens/fundo/Imagem\ do\ WhatsApp\ de\ 2024-04-24\ à\(s\)\ 21.58.54_c8d6df91.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  height: 710px;
+}
+
+.video-box p {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+
+
+}
+
+.divmusicas {
+  flex: 0.5;
+  /* cada div ocupa a mesma quantidade de espaço */
+  height: 700px;
+  text-align: center;
+  margin-bottom: -30px;
+
+
+}
+
+.imagemmusicas img {
+  width: 400px;
+  height: auto;
+  /* margin-top: -120px; Move os itens um pouco para cima */
+  margin-left: -300px;
+  margin-bottom: -425px;
+
+
+
+}
+
+.spotify {
+  width: 70%;
+  margin-top: 13px;
+  margin-left: 13px;
+  height: 600px;
+  float: left;
+}
+
+.musicatitulo {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: 'Mirage';
+  text-align: center;
+  border-radius: 50px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  margin-top: 45px;
+}
+
+.divmusicasgeral {
+  border-bottom: 0.4px solid #696765;
+  border-top: 0.4px solid #696765;
+  background-image: url("imagens/fundo/sacodelixo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 3px;
+}
+
+@font-face {
+  font-family: 'rossans';
+  src: url('fontes/rossans/Rossans\ Reguler.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'gothic_war';
+  src: url(fontes//gothic_war/Gothic\ War.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Mirage';
+  src: url(fontes/caviar_dreams/CaviarDreams_Italic.ttf) format('truetype');
+}
+
+.pagina_inicial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.4px solid #696765;
+}
+
+.pagina_inicial {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -3px;
+}
+
+.destaque {
+  display: flex;
+  border-bottom: 0.4px solid #696765;
+  border-top: 0.4px solid #696765;
+  background-image: url(imagens/fundo/Imagem\ do\ WhatsApp\ de\ 2024-04-24\ à\(s\)\ 21.58.54_c8d6df91.jpg);
+color: #ffffff;
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.destaquetexto {
+  flex: 1;
+  /* Isso faz com que o bloco de texto ocupe todo o espaço disponível */
+  /* background-color: rgba(175, 6, 6, 0.50); */
+  padding: 20px;
+  text-align: left;
+  font-family: 'Mirage', sans-serif;
+  background-image: url();
+  margin-top: 0px;
+  /* Adicionando margem superior de 20px */
+}
+
+
+.imagemdestaque {
+  flex: 1;
+  /* Isso faz com que a imagem ocupe todo o espaço disponível */
+  background-image: url('imagens/fundo/membros.jpg');
+  /* Substitua pelo caminho real para sua imagem */
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.comentarios {
+  padding: 110px;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.divredes h2{
+  margin-right: 30px;
+  margin-bottom: 25px;
+  font-size: 29px;
+}
+
+.txtsobre{
+  background-color: rgba(0, 0, 0, 0.60);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  border-radius: 5;
+  border-radius: 15px;
+}
+
+.txtsobrett{
+  background-color: rgba(0, 0, 0, 0.60);
+  padding: 1px;
+  text-align: center;
+  border-radius: 15px;
+  
+}
